@@ -146,7 +146,7 @@ target_transform:
 ####
 * Create EventBus
 
-```json
+```text
 POST /bus/createEventBus HTTP/1.1
 Host: demo.eventbridge.com
 Content-Type: application/json; charset=utf-8
@@ -159,7 +159,7 @@ Content-Type: application/json; charset=utf-8
 
 * Create EventSource
 
-```json
+```text
 POST /source/createEventSource HTTP/1.1
 Host: demo.eventbridge.com
 Content-Type: application/json; charset=utf-8
@@ -172,7 +172,7 @@ Content-Type: application/json; charset=utf-8
 
 
 * Create EventRule
-```json
+```text
 POST /rule/createEventRule HTTP/1.1
 Host: demo.eventbridge.com
 Content-Type: application/json; charset=utf-8
@@ -187,7 +187,7 @@ Content-Type: application/json; charset=utf-8
 * Create Target
 
 This is a sample with EventBridge target:
-```json
+```text
 POST /target/createEventTargets HTTP/1.1
 Host: demo.eventbridge.com
 Content-Type: application/json; charset=utf-8
@@ -208,7 +208,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 This is a sample with DingTalk target:
-```json
+```text
 POST /target/createEventTargets HTTP/1.1
 Host: demo.eventbridge.com
 Content-Type: application/json; charset=utf-8
@@ -231,7 +231,7 @@ Content-Type: application/json; charset=utf-8
 
 * Put Events to EventBus
 
-```json
+```textgit subtree push --prefix=rocketmq-eventbridge  
 POST /putEvents HTTP/1.1
 Host: demo.eventbridge.com
 Content-Type:"application/cloudevents+json; charset=UTF-8"
